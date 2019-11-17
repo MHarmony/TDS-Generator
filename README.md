@@ -5,15 +5,15 @@ Connects to an existing PostgreSQL database, creates Tableau Data Source (TDS) f
 ## Getting Started
 
 1. Clone the repository
-2. Edit config.ini with your environment-specific variables
+2. Edit [config.ini](config.ini) with your environment-specific variables
 3. Install the package requirements using `pip install -r requirements.txt`
 3. Run the python file!
 
 ### Prerequisites
 
-* Python
-* Access to a running Tableau Server (Tested on version 2019.1)
-* Access to a running PostgreSQL Server
+* Python - Developed and tested on version [3.7.5](https://www.python.org/downloads/release/python-375/)
+* Access to a running Tableau Server - Developed and tested on version [2019.1.6](https://www.tableau.com/support/releases/server/2019.1.6)
+* Access to a running PostgreSQL Server - Developed and tested on version [10.X](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 
 ## Contributing
 
