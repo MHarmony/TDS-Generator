@@ -12,7 +12,7 @@ Connects to an existing PostgreSQL database, creates Tableau Data Source (TDS) f
 ### Prerequisites
 
 * Python
-* Access to a running Tableau Server
+* Access to a running Tableau Server (Tested on version 2019.1)
 * Access to a running PostgreSQL Server
 
 ## Contributing
