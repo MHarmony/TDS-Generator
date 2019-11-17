@@ -47,6 +47,7 @@ tableauPassword = config['TABLEAU_SERVER']['Password']
 
 
 def generateTdsFiles():
+    conn = None
     try:
         regtype_mappings = None
 
@@ -133,14 +134,16 @@ def generateTdsFiles():
                 lineClear()
 
             publishDataSource(filePath, dataSourceProjectId)
+
+            cur.close()
     except psycopg2.Error as e:
         print(e)
     finally:
         if verbose:
             print('Closing connection to DB: {}'.format(dbName))
 
-        cur.close()
-        conn.close()
+        if conn is not None:
+            conn.close()
 
 
 def lineClear():
